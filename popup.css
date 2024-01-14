@@ -1,0 +1,169 @@
+body {
+  width: 300px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#taskInputContainer {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 150px;
+}
+
+button {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+li input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#removeButton {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#removeButton:hover {
+  background-color: #d32f2f;
+}
+
+#dueDateInput {
+  margin-left: 10px;
+}
+
+#taskInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+#calendarIcon {
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#calendarIcon:hover {
+  color: #4CAF50;
+}
+
+#calendarButton {
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+#calendarButton:hover {
+  color: #4CAF50;
+}
+
+#app {
+  text-align: center;
+}
+
+#taskInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#addButton {
+  margin-left: 10px;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@keyframes celebrateAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.celebrate {
+  animation: celebrateAnimation 1s ease-out;
+}
+
+@keyframes burstAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.burst {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f00; /* Spark color */
+  border-radius: 50%;
+  animation: burstAnimation 0.5s ease-out;
+}
+
+/* Additional styling for the button */
+#celebrateButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
